@@ -69,7 +69,6 @@ def getPalindrome(s, start, end):
 
     return s[start - i:end + i + 1]
 
-
 def longestPalindrome_dynamic(s):
     max_palindrome = s[0]
     for index, value in enumerate(s):
