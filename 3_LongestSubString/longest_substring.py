@@ -12,7 +12,6 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 '''
 
 ###最大子字符串
-
 def lengthOfLongestSubstring(s):
     """
     :type s: str

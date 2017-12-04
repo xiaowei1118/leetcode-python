@@ -24,8 +24,8 @@ def addTwoNumbers(l1, l2):
     head = None
     link = None
     carry = 0  #carry 表示进位
-    while not l1 is None or not l2 is None:
-        total = (l1.val if not l1 is None else 0) + (l2.val if not l2 is None else 0)+carry
+    while l1 or l2:
+        total = (l1.val if l1 else 0) + (l2.val if l2  else 0)+carry
         val = total % 10
         if link is None:
             link = ListNode(val)
@@ -35,10 +35,10 @@ def addTwoNumbers(l1, l2):
             link = link.next
         carry = total / 10
 
-        if not l1 is None:
+        if l1:
             l1 = l1.next
 
-        if not l2 is None:
+        if l2:
             l2 = l2.next
 
     if carry > 0:
@@ -64,7 +64,7 @@ def printListNodes(node):
     :param node: ListNode
     :return:
     '''
-    while not node is None:
+    while node:
         print node.val
         node = node.next
 
