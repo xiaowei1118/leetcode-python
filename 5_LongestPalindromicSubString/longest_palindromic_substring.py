@@ -16,7 +16,7 @@ Input: "cbbd"
 Output: "bb"
 '''
 
-
+### 暴力模式
 def longestPalindrome(s):
     """
     :type s: str
