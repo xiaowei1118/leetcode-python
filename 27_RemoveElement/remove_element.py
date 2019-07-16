@@ -17,4 +17,4 @@ def remove_element(nums, val):
     return nums[:k]
 
 list = [3,2,2,3]
-print remove_element(list,3)
+print remove_element(list,2)

@@ -15,6 +15,7 @@ def isPalindrome(x):
         return False
 
     n = 0
+    ## n代表x的位数
     for i in range(0, 100):
         if x / math.pow(10, i) > 0 and x / math.pow(10, i) < 10:
             n = i
